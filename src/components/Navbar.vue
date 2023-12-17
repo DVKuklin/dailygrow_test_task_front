@@ -1,0 +1,22 @@
+<template>
+  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a class="nav-link button-logout">Выйти</a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <RouterLink to="/login" class="nav-link">Войти router link</RouterLink>
+      </li>
+    </ul>
+  </nav>
+</template>
+
+<style lang="less">
+    .button-logout {
+        cursor: pointer;
+    }
+</style>
