@@ -3,18 +3,33 @@
         <!-- Sidebar user panel (optional) -->
         <div class="user-panel mt-3 pb-3 mb-3 d-flex">
             <div class="info">
-                <div class="d-block text-white" id="user">Пользователь</div>
+                <div class="d-block text-white" id="user" v-if="$store.getters['appState/getIsLogged']"><img class="person-icon" src="/icons/person.svg">{{ $store.getters['appState/getLogin'] }}</div>
             </div>
         </div>
 
         <nav class="mt-2">
-        <ul id="all_events_list" class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-        </ul>
-        <ul id="my_events_list" class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-            <li class="nav-header font-weight-bold"><h4>Мои события</h4></li>
-        </ul>
-        </nav>
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
 
-        <a href="/events/create" class="btn btn-primary">Создать событие</a>
+          <li class="nav-item" v-if="$store.getters['appState/getIsLogged']">
+            <RouterLink to="/b24-analitics" class="nav-link">
+              <p>
+                Bitrix analitics
+              </p>
+            </RouterLink>
+          </li>
+        </ul>
+
+        </nav>
     </div>
 </template>
+
+<script>
+</script>
+
+<style lang="less" scoped>
+.person-icon {
+    height: 1rem;
+}
+</style>
