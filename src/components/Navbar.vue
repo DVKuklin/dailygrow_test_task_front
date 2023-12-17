@@ -9,7 +9,7 @@
         <a class="nav-link button-logout">Выйти</a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
-        <RouterLink to="/login" class="nav-link">Войти router link</RouterLink>
+        <RouterLink to="/login" class="nav-link">Войти</RouterLink>
       </li>
     </ul>
   </nav>
