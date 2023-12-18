@@ -27,3 +27,10 @@ npm run dev
 ```sh
 npm run build
 ```
+
+### Local deploy
+1. git clone https://github.com/DVKuklin/dailygrow_test_task_front.git .
+2. npm install
+3. cp .env.development.local.example .env.development.local настроить url локального бэка
+4. cp .env.production.local.example .env.production.local настроить url бэка продакшн
+5. npm run dev
