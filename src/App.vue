@@ -19,7 +19,7 @@
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
     <RouterLink to="/" class="brand-link">
-      <span class="brand-text font-weight-light font-weight-bold">SWC test task</span>
+      <span class="brand-text font-weight-light font-weight-bold">dailygrow</span>
     </RouterLink>
 
     <!-- Sidebar -->

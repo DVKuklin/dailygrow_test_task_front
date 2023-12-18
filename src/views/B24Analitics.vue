@@ -1,6 +1,6 @@
 <template>
-    <div class="">
-        <h3 class="text-center pt-4">Аналитика</h3>
+    <h3 class="text-center pt-4">Аналитика</h3>
+    <div class="table-container">
         <table class="table">
         <tr>
             <th>Название канала</th>
@@ -43,7 +43,6 @@ export default {
             .then(response => { 
                 if (response.data.status=='success') {
                     this.table = response.data.data;
-                    console.log(this.table);
                 }
                 // console.log(response);
             })
@@ -60,4 +59,8 @@ export default {
 </script>
 
 <style lang="less" scoped>
+.table-container {
+    max-width: 100%;
+    overflow-x:auto;
+}
 </style>
